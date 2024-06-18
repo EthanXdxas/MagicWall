@@ -1,0 +1,8 @@
+V2ray普通
+bash <(curl -s -L https://git.io/v2ray.sh)
+
+加速
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+
+ssr
+http://isomeonegc.blogspot.com/2018/03/google-cloud-platformvpsbbrssr.html
