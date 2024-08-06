@@ -1,27 +1,24 @@
-一、准备工作
-一台vps、一个域名，并将域名解析到vps对应ip
-二、快速搭建一个vless+ws+tls节点
-wget https://raw.githubusercontent.com/yirenchengfeng1/linux/main/v2ray.sh
-三、自动配置 WARP WireGuard 双栈非全局网络
-bash <(curl -fsSL git.io/warp.sh) x
-      自动配置双栈全局网络
-bash <(curl -fsSL git.io/warp.sh) d
+//Veless
+wget https://raw.githubusercontent.com/EthanXdxas/MagicWall/main/v2ray.sh
+//wget https://raw.githubusercontent.com/yirenchengfeng1/linux/main/v2ray.sh
 
-四、获取命令帮助
-bash <(curl -fsSL git.io/warp.sh) help
-五、管理菜单
-bash <(curl -fsSL git.io/warp.sh) menu
-六、修改json配置文件
-从逗号开始
-七、抓取wgcf端口的流量
-tcpdump -i wgcf
+//Wrap工具
+wget https://raw.githubusercontent.com/P3TERX/warp.sh/main/warp.sh
+
+//Wrap-Go工具
+bash <(wget -qO- https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh 2> /dev/null)
+1、终止warp-go： kill -15 $(pgrep warp-go)
+2、终止wgcf： systemctl stop wg-quick@wgcf
 
 //奈菲解锁检测工具
 bash -c "$(curl -fsSL https://gist.githubusercontent.com/sarkrui/3383f5db42f26d55d53a9daee6c9f5bc/raw/657865b499053754a7d9ab7262eb9d19cc80ecae/install-nf.sh)"
 
-//自动切换支持解锁ip
-curl -fsSL -o AutoWarpIp.sh  https://raw.githubusercontent.com/EthanXdxas/AutoWarpIp/master/AutoWarpIp.sh && chmod +x AutoWarpIp.sh && clear && ./AutoWarpIp.sh
+//自动解锁工具
+bash <(curl -sSL https://gitlab.com/fscarmen/warp_unlock/-/raw/main/unlock.sh)
+----查看服务 [systemctl status warp_unlock]，关闭服务 [systemctl disable --now warp_unlock]
 
+//自动切换支持解锁ip （已失效）
+curl -fsSL -o AutoWarpIp.sh  https://raw.githubusercontent.com/EthanXdxas/AutoWarpIp/master/AutoWarpIp.sh && chmod +x AutoWarpIp.sh && clear && ./AutoWarpIp.sh
 
 域名
 wp.bdxdss.cloudns.be     35.240.134.160
