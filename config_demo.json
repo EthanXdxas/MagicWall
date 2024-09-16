@@ -6,7 +6,7 @@
     "settings": {
         "clients": [
             {
-                "id": "a0fa4e56-865a-4a3e-aaf2-1a1802fc9fee",
+                "id": "xxxxx",
                 "level": 0
             }
         ],
@@ -16,9 +16,9 @@
         "network": "ws",
         "security": "none",
         "wsSettings": {
-            "path": "/bdxdssbase",
+            "path": "xxxx",
             "headers": {
-                "Host": "base.bdxdss.cloudns.be"
+                "Host": "xxxx"
             }
         }
     }
@@ -36,11 +36,11 @@
     "settings": {
       "vnext": [
         {
-          "address": "35.240.200.215",
+          "address": "xxxxxx",
           "port": 9100,
           "users": [
             {
-              "id": "3844229d-6caf-452b-bc10-304a22bc11f2",
+              "id": "xxxxxx",
               "alterId": 0,
               "email": "t@t.tt",
               "security": "auto",
@@ -55,13 +55,13 @@
       "security": "tls",
       "tlsSettings": {
         "allowInsecure": false,
-        "serverName": "wp.bdxdss.cloudns.be",
+        "serverName": "xxxxx",
         "show": false
       },
       "wsSettings": {
-        "path": "/bdxd2wp",
+        "path": "xxxxxx",
         "headers": {
-          "Host": "wp.bdxdss.cloudns.be"
+          "Host": "xxxxxx"
         }
       }
     },
