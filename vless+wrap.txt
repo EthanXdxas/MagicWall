@@ -1,3 +1,8 @@
+//开启Root登陆
+passwd
+vi /etc/ssh/sshd_config
+reboot
+
 //Veless
 wget https://raw.githubusercontent.com/EthanXdxas/MagicWall/main/v2ray.sh
 //wget https://raw.githubusercontent.com/yirenchengfeng1/linux/main/v2ray.sh
@@ -23,3 +28,34 @@ curl -fsSL -o AutoWarpIp.sh  https://raw.githubusercontent.com/EthanXdxas/AutoWa
 域名
 wp.bdxdss.cloudns.be     35.240.134.160
 base.bdxdss.cloudns.be  34.126.127.241
+
+
+"outbounds": [{
+"protocol": "freedom",
+"settings": {}
+}, {
+	"tag":"IP4_out",
+	"protocol": "freedom",
+	"settings": {}
+},{
+	"tag":"IP6_out",
+	"protocol": "freedom",
+	"settings": {
+	  "domainStrategy": "UseIPv6"
+	}
+},{
+	"protocol": "blackhole",
+	"settings": {},
+	"tag": "blocked"
+}],
+"routing": {
+"rules": [	{
+	"type": "field",
+	"outboundTag": "IP6_out",
+	"domain": ["geosite:netflix"]
+},{
+	"type": "field",
+	"ip": ["geoip:private"],
+	"outboundTag": "blocked"
+}]
+}
