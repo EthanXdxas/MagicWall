@@ -1,0 +1,83 @@
+{
+    "inbounds": [
+    {
+        "tag": "VMess-WS-TLS-base.bdxdss.cloudns.be.json",
+        "port": 40255,
+        "listen": "127.0.0.1",
+        "protocol": "vmess",
+        "settings": {
+            "clients": [
+            {
+                "id": "053a512f-17c2-43b3-ba7e-37a2fe0b14bb"
+            }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "none",
+            "wsSettings": {
+            "path": "/053a512f-17c2-43b3-ba7e-37a2fe0b14bb",
+            "headers": {
+                "Host": "base.bdxdss.cloudns.be"
+            }
+            }
+        },
+        "sniffing": {
+            "enabled": true,
+            "destOverride": [
+            "http",
+            "tls"
+            ]
+        }
+    }],
+    "outbounds": [
+    {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "35.240.217.17",
+              "port": 443,
+              "users": [
+                {
+                  "id": "5cbd1350-be5a-4a7a-a23b-e499e126b9cf",
+                  "alterId": 0,
+                  "email": "t@t.tt",
+                  "security": "auto",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "allowInsecure": false,
+            "serverName": "wp.bdxdss.cloudns.be",
+            "show": false
+          },
+          "wsSettings": {
+            "path": "/5cbd1350-be5a-4a7a-a23b-e499e126b9cf",
+            "headers": {
+              "Host": "wp.bdxdss.cloudns.be"
+            }
+          }
+        },
+        "mux": {
+          "enabled": false,
+          "concurrency": -1
+        }
+ 	}],
+    "routing": {
+        "rules": [
+          {
+            "type": "field",
+            "outboundTag": "proxy",
+            "domain": ["geosite:netflix","geosite:openai"]
+          }
+        ]
+    }
+}
