@@ -37,11 +37,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "35.240.217.17",
+              "address": "34.126.157.244",
               "port": 443,
               "users": [
                 {
-                  "id": "5cbd1350-be5a-4a7a-a23b-e499e126b9cf",
+                  "id": "7ad7bf16-30ad-4c52-9b26-089a7420fe48",
                   "alterId": 0,
                   "email": "t@t.tt",
                   "security": "auto",
@@ -60,7 +60,7 @@
             "show": false
           },
           "wsSettings": {
-            "path": "/5cbd1350-be5a-4a7a-a23b-e499e126b9cf",
+            "path": "/7ad7bf16-30ad-4c52-9b26-089a7420fe48",
             "headers": {
               "Host": "wp.bdxdss.cloudns.be"
             }
@@ -71,13 +71,13 @@
           "concurrency": -1
         }
  	}],
-    "routing": {
-        "rules": [
-          {
-            "type": "field",
-            "outboundTag": "proxy",
-            "domain": ["geosite:netflix","geosite:openai"]
-          }
-        ]
-    }
+  "routing": {
+      "rules": [
+        {
+          "type": "field",
+          "outboundTag": "proxy",
+          "domain": ["geosite:netflix","geosite:openai"]
+        }
+      ]
+  }
 }
