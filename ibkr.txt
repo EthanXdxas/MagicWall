@@ -1,0 +1,6 @@
+接收券商名称：Interactive Brokers LLC
+DTC代码：DTC 0534
+接收券商的账户号码：
+接收券商联系人：Settlement Department
+联系人电话：+800 101 3456
+联系人电邮：fop-transfer-in@interactivebrokers.com
