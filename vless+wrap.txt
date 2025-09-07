@@ -38,6 +38,6 @@ curl -fsSL -o AutoWarpIp.sh  https://raw.githubusercontent.com/EthanXdxas/AutoWa
 域名
 base.bdxdss.cloudns.be   //34.87.69.177
 wp.bdxdss.cloudns.be     //35.240.200.215
-API_TOKEN Qlmlf1qQcJRT7dKvB3dD3AdxemS_F_M2ei8HfxPN
+BASE_API_TOKEN Qlmlf1qQcJRT7dKvB3dD3AdxemS_F_M2ei8HfxPN
 
 媒体解锁守护进程已安装成功，已创建一个 systemd 服务，查看 [systemctl status warp_unlock]，关闭 [systemctl disable --now warp_unlock]，VPS 重启仍生效。进入任务运行日志将保存在 /root/result.log 
