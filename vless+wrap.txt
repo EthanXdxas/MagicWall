@@ -10,8 +10,9 @@ reboot
 /etc/v2ray/
 
 //Veless
+
+wget https://raw.githubusercontent.com/233boy/sing-box/refs/heads/main/install.sh
 wget https://raw.githubusercontent.com/233boy/v2ray/refs/heads/master/install.sh
-wget https://raw.githubusercontent.com/233boy/v2ray/refs/heads/master/v2ray.sh
 wget https://raw.githubusercontent.com/mack-a/v2ray-agent/refs/heads/master/install.sh
 
 
